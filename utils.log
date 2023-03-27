@@ -1,0 +1,461 @@
+2023-03-20 12:50:26 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\user_fundoo\views.py changed, reloading.
+2023-03-20 12:54:57 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-20 12:55:15 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-20 13:02:31 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\user_fundoo\views.py changed, reloading.
+2023-03-20 13:02:36 WARNING-Bad Request: /login
+2023-03-20 13:03:39 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\user_fundoo\views.py changed, reloading.
+2023-03-20 13:07:36 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\user_fundoo\views.py changed, reloading.
+2023-03-20 13:09:39 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\user_fundoo\views.py changed, reloading.
+2023-03-20 13:11:40 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\user_fundoo\views.py changed, reloading.
+2023-03-20 13:13:44 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py changed, reloading.
+2023-03-20 13:24:03 WARNING-Bad Request: /note/notes/
+2023-03-20 13:25:14 WARNING-Not Acceptable: /login
+2023-03-20 13:30:43 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\user_fundoo\views.py changed, reloading.
+2023-03-20 13:32:59 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\user_fundoo\views.py changed, reloading.
+2023-03-20 13:37:31 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-20 13:39:42 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py changed, reloading.
+2023-03-20 13:53:50 WARNING-Bad Request: /note/notes/6/
+2023-03-20 13:54:36 WARNING-Bad Request: /note/notes/6/
+2023-03-20 13:57:38 WARNING-Bad Request: /note/notes/6/
+2023-03-20 14:00:45 WARNING-Bad Request: /note/notes/6/
+2023-03-20 14:00:51 WARNING-Bad Request: /note/notes/6/
+2023-03-20 14:01:19 WARNING-Bad Request: /note/notes/5/3/
+2023-03-20 14:02:10 ERROR-Internal Server Error: /note/notes/6/
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py", line 56, in wrapper
+    return function(self, request, *args, **kwargs)
+TypeError: delete() missing 1 required positional argument: 'user_id'
+2023-03-20 14:02:58 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\urls.py changed, reloading.
+2023-03-20 14:03:04 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\urls.py changed, reloading.
+2023-03-20 14:03:40 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-20 14:04:03 WARNING-Bad Request: /note/notes/6/
+2023-03-20 14:05:45 WARNING-Bad Request: /note/notes/6/
+2023-03-20 14:08:49 WARNING-Bad Request: /note/notes/10/
+2023-03-20 14:09:15 WARNING-Bad Request: /note/notes/10/
+2023-03-20 14:12:30 WARNING-Bad Request: /note/notes/12/
+2023-03-20 14:13:11 WARNING-Bad Request: /note/notes/12/
+2023-03-20 14:13:18 WARNING-Bad Request: /note/notes/12/
+2023-03-20 14:18:15 WARNING-Bad Request: /note/notes/16/
+2023-03-20 14:19:29 WARNING-Bad Request: /note/notes/16/
+2023-03-20 14:20:56 WARNING-Bad Request: /note/notes/16/
+2023-03-20 16:39:53 WARNING-Bad Request: /note/notes/16/
+2023-03-20 16:53:38 WARNING-Bad Request: /note/notes/16/
+2023-03-20 16:54:16 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py changed, reloading.
+2023-03-20 16:54:29 WARNING-Bad Request: /note/notes/16/
+2023-03-20 16:55:15 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py changed, reloading.
+2023-03-20 16:55:22 WARNING-Bad Request: /note/notes/16/
+2023-03-20 16:57:48 WARNING-Bad Request: /note/notes/16/
+2023-03-20 17:00:22 WARNING-Bad Request: /note/notes/16/
+2023-03-20 17:01:18 WARNING-Bad Request: /note/notes/16/
+2023-03-20 17:02:02 WARNING-Bad Request: /note/notes/16/
+2023-03-20 17:04:26 WARNING-Bad Request: /note/notes/17/
+2023-03-22 20:39:00 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\fundoonote\settings.py changed, reloading.
+2023-03-23 17:34:47 WARNING-Bad Request: /note/notes/
+2023-03-23 17:34:58 WARNING-Bad Request: /note/notes/
+2023-03-23 17:36:34 WARNING-Bad Request: /note/notes/15/
+2023-03-23 17:36:49 WARNING-Bad Request: /note/notes/8/
+2023-03-23 17:37:49 WARNING-Bad Request: /note/notes/3/
+2023-03-23 20:58:02 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py changed, reloading.
+2023-03-23 21:01:38 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py changed, reloading.
+2023-03-25 09:40:51 WARNING-Bad Request: /note/notes/
+2023-03-25 09:41:10 WARNING-Bad Request: /login
+2023-03-25 09:41:21 WARNING-Bad Request: /login
+2023-03-25 09:50:40 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 09:52:01 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 09:52:40 WARNING-Bad Request: /note/notes/
+2023-03-25 09:52:53 WARNING-Bad Request: /note/notes/
+2023-03-25 09:53:36 WARNING-Bad Request: /login
+2023-03-25 09:54:23 WARNING-Bad Request: /login
+2023-03-25 09:55:04 WARNING-Bad Request: /login
+2023-03-25 09:55:06 WARNING-Bad Request: /login
+2023-03-25 09:56:54 WARNING-Bad Request: /note/notes/
+2023-03-25 09:57:03 WARNING-Bad Request: /note/notes/8/
+2023-03-25 10:00:00 WARNING-Bad Request: /login
+2023-03-25 10:00:40 WARNING-Bad Request: /login
+2023-03-25 10:01:12 WARNING-Bad Request: /login
+2023-03-25 10:01:56 WARNING-Bad Request: /register
+2023-03-25 10:02:25 WARNING-Bad Request: /register
+2023-03-25 10:05:28 WARNING-Bad Request: /note/notes/8/
+2023-03-25 10:05:45 WARNING-Bad Request: /note/notes/20/
+2023-03-25 10:06:04 WARNING-Bad Request: /note/notes/16/
+2023-03-25 10:06:29 WARNING-Bad Request: /note/notes/20/
+2023-03-25 10:06:38 WARNING-Bad Request: /note/notes/16/
+2023-03-25 10:06:51 WARNING-Bad Request: /note/notes/16/
+2023-03-25 10:06:57 WARNING-Bad Request: /note/notes/16/
+2023-03-25 10:07:07 WARNING-Not Found: /note/notes/16/20/
+2023-03-25 10:07:16 WARNING-Bad Request: /note/notes/20/
+2023-03-25 10:08:06 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 10:10:59 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 10:15:42 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 10:16:05 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 10:16:14 ERROR-Internal Server Error: /note/notes/20/
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py", line 51, in wrapper
+    return function(self, request, *args, **kwargs)
+TypeError: get() got an unexpected keyword argument 'note_id'
+2023-03-25 10:18:20 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\urls.py changed, reloading.
+2023-03-25 10:18:23 ERROR-Internal Server Error: /note/notes/20/
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py", line 51, in wrapper
+    return function(self, request, *args, **kwargs)
+TypeError: get() got an unexpected keyword argument 'note_id'
+2023-03-25 10:19:44 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\urls.py changed, reloading.
+2023-03-25 10:20:16 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\urls.py changed, reloading.
+2023-03-25 10:20:22 ERROR-Internal Server Error: /note/notes/20/
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py", line 51, in wrapper
+    return function(self, request, *args, **kwargs)
+TypeError: get() got an unexpected keyword argument 'note_id'
+2023-03-25 10:20:42 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\urls.py changed, reloading.
+2023-03-25 10:21:09 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 10:21:27 ERROR-Internal Server Error: /note/notes/20/
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py", line 51, in wrapper
+    return function(self, request, *args, **kwargs)
+TypeError: get() got an unexpected keyword argument 'note_id'
+2023-03-25 10:21:52 WARNING-Not Found: /note/notes/5/3/
+2023-03-25 10:22:38 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 10:22:45 ERROR-Internal Server Error: /note/notes/20/
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py", line 51, in wrapper
+    return function(self, request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'note_id'
+2023-03-25 10:23:22 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 10:23:28 ERROR-Internal Server Error: /note/notes/20/
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py", line 51, in wrapper
+    return function(self, request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'note_id'
+2023-03-25 10:24:42 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 11:51:41 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 11:53:23 WARNING-Bad Request: /note/notes/
+2023-03-25 11:53:31 WARNING-Bad Request: /note/notes/20/
+2023-03-25 11:53:53 WARNING-Bad Request: /register
+2023-03-25 11:54:09 WARNING-Bad Request: /note/notes/20/
+2023-03-25 11:54:15 WARNING-Bad Request: /note/notes/
+2023-03-25 11:56:15 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 11:56:52 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 11:57:26 ERROR-Internal Server Error: /note/notes/20/
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py", line 51, in wrapper
+    return function(self, request, *args, **kwargs)
+TypeError: get() got an unexpected keyword argument 'note_id'
+2023-03-25 11:58:44 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 11:59:17 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 12:00:05 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 12:01:53 WARNING-Bad Request: /register
+2023-03-25 12:02:56 ERROR-Internal Server Error: /note/notes/20/
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py", line 51, in wrapper
+    return function(self, request, *args, **kwargs)
+TypeError: get() got an unexpected keyword argument 'note_id'
+2023-03-25 12:03:21 ERROR-Internal Server Error: /note/notes/18/
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py", line 51, in wrapper
+    return function(self, request, *args, **kwargs)
+TypeError: get() got an unexpected keyword argument 'note_id'
+2023-03-25 12:04:33 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 12:06:04 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 12:07:20 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 12:07:24 WARNING-Bad Request: /note/notes/
+2023-03-25 12:07:52 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 12:08:31 WARNING-Bad Request: /login
+2023-03-25 12:21:57 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\user_fundoo\views.py changed, reloading.
+2023-03-25 12:23:46 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 12:25:19 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 12:28:04 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 12:33:12 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 12:34:58 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 12:35:40 WARNING-Forbidden: /note/notes/
+2023-03-25 12:36:43 WARNING-Forbidden: /note/notes/
+2023-03-25 12:36:49 WARNING-Forbidden: /note/notes/
+2023-03-25 12:37:03 WARNING-Forbidden: /note/notes/3/
+2023-03-25 12:37:05 WARNING-Forbidden: /note/notes/3/
+2023-03-25 12:37:45 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 12:37:49 WARNING-Forbidden: /note/notes/3/
+2023-03-25 12:37:55 WARNING-Forbidden: /note/notes/3/
+2023-03-25 12:39:38 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py changed, reloading.
+2023-03-25 12:40:51 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\fundoonote\settings.py changed, reloading.
+2023-03-25 12:41:41 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py changed, reloading.
+2023-03-25 12:42:28 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\fundoonote\settings.py changed, reloading.
+2023-03-25 12:43:09 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\fundoonote\settings.py changed, reloading.
+2023-03-25 12:44:11 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\fundoonote\settings.py changed, reloading.
+2023-03-25 12:44:17 WARNING-Bad Request: /note/notes/3/
+2023-03-25 12:46:14 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 12:49:54 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 12:51:35 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 13:09:45 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-25 13:10:44 WARNING-Bad Request: /register
+2023-03-25 13:13:39 WARNING-Bad Request: /note/notes/
+2023-03-25 13:14:12 WARNING-Bad Request: /note/notes/
+2023-03-25 13:14:37 WARNING-Bad Request: /note/notes/
+2023-03-25 13:15:13 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 13:16:16 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 13:17:17 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-25 13:17:19 WARNING-Bad Request: /note/notes/
+2023-03-25 13:19:25 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-25 13:19:29 WARNING-Bad Request: /note/notes/
+2023-03-25 13:19:32 WARNING-Bad Request: /note/notes/
+2023-03-25 13:22:11 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-25 13:22:17 WARNING-Bad Request: /note/notes/
+2023-03-25 13:22:32 WARNING-Bad Request: /note/notes/
+2023-03-25 13:22:33 WARNING-Bad Request: /note/notes/
+2023-03-25 13:24:16 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-25 13:24:20 WARNING-Bad Request: /note/notes/
+2023-03-25 13:25:11 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-25 13:25:18 WARNING-Bad Request: /note/notes/
+2023-03-25 13:25:40 WARNING-Bad Request: /note/notes/
+2023-03-25 13:26:32 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-25 13:30:10 WARNING-Bad Request: /note/notes/
+2023-03-25 13:30:13 WARNING-Bad Request: /note/notes/
+2023-03-25 13:32:45 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-25 14:48:20 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\user_fundoo\views.py changed, reloading.
+2023-03-26 23:04:34 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 09:31:49 WARNING-Bad Request: /login
+2023-03-27 09:35:10 WARNING-Bad Request: /note/notes/
+2023-03-27 09:36:51 WARNING-Bad Request: /note/notes/
+2023-03-27 09:36:54 WARNING-Bad Request: /note/notes/
+2023-03-27 09:37:24 WARNING-Bad Request: /note/notes/
+2023-03-27 09:41:12 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 09:41:19 WARNING-Bad Request: /note/notes/
+2023-03-27 09:43:09 WARNING-Bad Request: /note/notes/
+2023-03-27 09:44:11 WARNING-Bad Request: /note/notes/
+2023-03-27 09:44:49 WARNING-Bad Request: /note/notes/
+2023-03-27 09:46:28 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 09:48:26 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 09:48:30 WARNING-Bad Request: /note/notes/
+2023-03-27 09:50:47 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 09:51:21 WARNING-Bad Request: /note/notes/
+2023-03-27 09:51:29 WARNING-Bad Request: /note/notes/
+2023-03-27 09:51:58 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 09:52:53 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 09:52:59 WARNING-Bad Request: /note/notes/
+2023-03-27 09:53:12 WARNING-Bad Request: /note/notes/
+2023-03-27 09:53:33 WARNING-Bad Request: /note/notes/
+2023-03-27 09:55:52 WARNING-Bad Request: /note/notes/
+2023-03-27 09:58:41 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 09:59:22 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 10:00:16 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 10:00:19 WARNING-Bad Request: /note/notes/
+2023-03-27 10:01:23 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 10:01:29 WARNING-Bad Request: /note/notes/
+2023-03-27 10:03:48 WARNING-Bad Request: /login
+2023-03-27 10:04:00 WARNING-Bad Request: /login
+2023-03-27 10:04:43 WARNING-Bad Request: /note/notes/
+2023-03-27 10:07:04 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 10:07:25 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 10:08:25 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 10:11:16 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 10:11:58 WARNING-Bad Request: /login
+2023-03-27 10:15:04 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 10:17:23 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 10:31:53 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 10:32:02 WARNING-Bad Request: /note/notes/
+2023-03-27 10:32:11 WARNING-Bad Request: /note/notes/
+2023-03-27 10:34:17 WARNING-Bad Request: /note/notes/
+2023-03-27 10:34:20 WARNING-Bad Request: /note/notes/
+2023-03-27 10:34:29 WARNING-Bad Request: /note/notes/
+2023-03-27 10:35:16 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 10:37:21 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 10:39:52 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 10:39:56 WARNING-Bad Request: /note/notes/
+2023-03-27 10:39:58 WARNING-Bad Request: /note/notes/
+2023-03-27 10:40:00 WARNING-Bad Request: /note/notes/
+2023-03-27 10:41:08 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 10:43:11 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 10:48:43 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 10:50:08 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 10:50:10 WARNING-Bad Request: /note/notes/
+2023-03-27 10:51:17 WARNING-Bad Request: /note/notes/
+2023-03-27 10:51:42 WARNING-Bad Request: /note/notes/
+2023-03-27 10:51:51 WARNING-Bad Request: /register
+2023-03-27 10:52:05 WARNING-Bad Request: /note/notes/
+2023-03-27 10:53:15 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 10:55:02 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 10:55:41 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 10:57:24 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 10:57:30 WARNING-Bad Request: /note/notes/
+2023-03-27 10:57:39 WARNING-Bad Request: /note/notes/
+2023-03-27 10:57:40 WARNING-Bad Request: /note/notes/
+2023-03-27 10:58:09 WARNING-Bad Request: /note/notes/
+2023-03-27 10:58:19 WARNING-Bad Request: /note/notes/
+2023-03-27 10:58:21 WARNING-Bad Request: /note/notes/
+2023-03-27 10:59:47 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 11:50:08 WARNING-Bad Request: /note/notes/
+2023-03-27 11:50:10 WARNING-Bad Request: /note/notes/
+2023-03-27 11:53:04 WARNING-Bad Request: /login
+2023-03-27 18:52:55 WARNING-Bad Request: /note/notes/
+2023-03-27 18:54:43 WARNING-Bad Request: /note/notes/
+2023-03-27 18:55:03 WARNING-Bad Request: /note/notes/
+2023-03-27 18:55:11 WARNING-Bad Request: /note/notes/
+2023-03-27 18:55:56 WARNING-Bad Request: /note/notes/
+2023-03-27 18:55:57 WARNING-Bad Request: /note/notes/
+2023-03-27 18:55:59 WARNING-Bad Request: /note/notes/
+2023-03-27 18:56:55 WARNING-Bad Request: /note/notes/
+2023-03-27 18:57:05 WARNING-Bad Request: /note/notes/
+2023-03-27 18:57:09 WARNING-Bad Request: /note/notes/
+2023-03-27 19:00:57 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 19:02:13 WARNING-Bad Request: /note/notes/14/
+2023-03-27 19:02:32 WARNING-Bad Request: /note/notes/29/
+2023-03-27 19:02:34 WARNING-Bad Request: /note/notes/29/
+2023-03-27 20:27:11 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
