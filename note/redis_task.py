@@ -1,7 +1,9 @@
 import redis
 import json
 
+# redis connnection
 redis_instance = redis.Redis(host='localhost', port=6379, db=0)
+
 
 class RedisNote:
     def get_key(self, user_id):
@@ -26,6 +28,3 @@ class RedisNote:
     def delete(self, note_id, user_id):
         key = self.get_key(user_id)
         redis_instance.hdel(key, str(note_id))
-
-
-

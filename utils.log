@@ -459,3 +459,4 @@ TypeError: get() got an unexpected keyword argument 'note_id'
 2023-03-27 19:02:32 WARNING-Bad Request: /note/notes/29/
 2023-03-27 19:02:34 WARNING-Bad Request: /note/notes/29/
 2023-03-27 20:27:11 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 20:38:06 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
