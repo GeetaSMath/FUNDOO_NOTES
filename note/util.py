@@ -49,6 +49,7 @@ def verify_token(function):
         if not token:
             return Response({"message": "token not found"}, status=400)
         decoded = JWT().decode(token)
+        # print(decoded)
         if not decoded:
             return Response({"message": "token authentication required"})
         user_id = decoded.get("user_id")
@@ -58,4 +59,3 @@ def verify_token(function):
         return function(self, request, *args, **kwargs)
 
     return wrapper
-

@@ -460,3 +460,376 @@ TypeError: get() got an unexpected keyword argument 'note_id'
 2023-03-27 19:02:34 WARNING-Bad Request: /note/notes/29/
 2023-03-27 20:27:11 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
 2023-03-27 20:38:06 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 23:05:03 WARNING-Bad Request: /note/notes/
+2023-03-27 23:07:13 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 23:07:35 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-27 23:07:39 WARNING-Bad Request: /note/notes/
+2023-03-27 23:09:16 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 01:10:06 WARNING-Bad Request: /note/notes/
+2023-03-28 01:15:21 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 06:28:22 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 06:40:06 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 06:43:57 WARNING-Bad Request: /note/notes/
+2023-03-28 06:44:44 WARNING-Bad Request: /note/notes/
+2023-03-28 06:52:47 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 06:54:49 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 06:57:27 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 10:11:51 WARNING-Bad Request: /note/notes/
+2023-03-28 10:11:53 WARNING-Bad Request: /note/notes/
+2023-03-28 10:24:36 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 10:28:36 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 10:29:10 WARNING-Bad Request: /note/notes/
+2023-03-28 10:31:34 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 10:31:47 WARNING-Bad Request: /note/notes/
+2023-03-28 10:33:15 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 10:33:18 WARNING-Bad Request: /note/notes/
+2023-03-28 10:35:33 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 10:36:06 ERROR-Internal Server Error: /note/notes/
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py", line 21, in post
+    RedisNote().save(serializer.data, request.user.id)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py", line 30, in save
+    raise ValueError()
+ValueError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py", line 58, in wrapper
+    return function(self, request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py", line 26, in post
+    return Response({"success": False, "message": e.args[0], "status": 400}, status=400)
+IndexError: tuple index out of range
+2023-03-28 10:37:04 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 10:37:08 ERROR-Internal Server Error: /note/notes/
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py", line 21, in post
+    RedisNote().save(serializer.data, request.user.id)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py", line 31, in save
+    raise ValueError()
+ValueError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py", line 58, in wrapper
+    return function(self, request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py", line 26, in post
+    return Response({"success": False, "message": e.args[0], "status": 400}, status=400)
+IndexError: tuple index out of range
+2023-03-28 10:39:43 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 10:39:52 ERROR-Internal Server Error: /note/notes/
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py", line 21, in post
+    RedisNote().save(serializer.data, request.user.id)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py", line 31, in save
+    raise ValueError()
+ValueError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py", line 58, in wrapper
+    return function(self, request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py", line 26, in post
+    return Response({"success": False, "message": e.args[0], "status": 400}, status=400)
+IndexError: tuple index out of range
+2023-03-28 10:42:06 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 10:42:15 ERROR-Internal Server Error: /note/notes/
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py", line 21, in post
+    RedisNote().save(serializer.data, request.user.id)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py", line 31, in save
+    raise ValueError()
+ValueError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py", line 58, in wrapper
+    return function(self, request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py", line 26, in post
+    return Response({"success": False, "message": e.args[0], "status": 400}, status=400)
+IndexError: tuple index out of range
+2023-03-28 10:47:02 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 10:47:12 ERROR-Internal Server Error: /note/notes/
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py", line 21, in post
+    RedisNote().save(serializer.data, request.user.id)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py", line 31, in save
+    raise ValueError()
+ValueError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py", line 58, in wrapper
+    return function(self, request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py", line 26, in post
+    return Response({"success": False, "message": e.args[0], "status": 400}, status=400)
+IndexError: tuple index out of range
+2023-03-28 10:49:58 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 10:55:45 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 10:59:21 WARNING-Bad Request: /note/notes/
+2023-03-28 10:59:44 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 11:22:52 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 11:28:40 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 11:44:51 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 11:45:31 WARNING-Bad Request: /note/notes/
+2023-03-28 11:51:44 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 11:51:44 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 12:06:08 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:06:08 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 12:14:06 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 12:14:06 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 12:14:16 WARNING-Bad Request: /note/notes/
+2023-03-28 12:15:26 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:15:26 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:16:38 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:16:38 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:18:14 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:18:14 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:19:24 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 12:19:25 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 12:19:53 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:19:53 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:21:12 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 12:21:12 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 12:23:41 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:23:41 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:24:27 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:24:28 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:27:18 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:27:18 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:28:01 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:28:01 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:28:40 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:28:40 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:32:19 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:32:19 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:34:35 WARNING-Bad Request: /note/notes/
+2023-03-28 12:36:04 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:36:04 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:40:06 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 12:40:07 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 12:40:10 WARNING-Bad Request: /note/notes/
+2023-03-28 12:43:19 WARNING-Bad Request: /note/notes/
+2023-03-28 12:44:53 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\urls.py changed, reloading.
+2023-03-28 12:44:53 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\urls.py changed, reloading.
+2023-03-28 12:45:06 WARNING-Bad Request: /note/notes/70/
+2023-03-28 12:47:26 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py changed, reloading.
+2023-03-28 12:47:26 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py changed, reloading.
+2023-03-28 12:47:30 WARNING-Bad Request: /note/notes/70/
+2023-03-28 12:47:57 WARNING-Bad Request: /note/notes/
+2023-03-28 12:48:09 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\urls.py changed, reloading.
+2023-03-28 12:48:09 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\urls.py changed, reloading.
+2023-03-28 12:48:16 WARNING-Bad Request: /note/notes/
+2023-03-28 12:48:18 WARNING-Bad Request: /note/notes/
+2023-03-28 12:48:43 WARNING-Bad Request: /note/notes/
+2023-03-28 12:48:46 WARNING-Bad Request: /note/notes/
+2023-03-28 12:48:47 WARNING-Bad Request: /note/notes/
+2023-03-28 12:49:11 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\urls.py changed, reloading.
+2023-03-28 12:49:11 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\urls.py changed, reloading.
+2023-03-28 12:49:15 WARNING-Bad Request: /note/notes/
+2023-03-28 12:50:30 ERROR-Internal Server Error: /note/notes/70/
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py", line 59, in wrapper
+    return function(self, request, *args, **kwargs)
+TypeError: get() got an unexpected keyword argument 'note_id'
+2023-03-28 12:54:09 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\urls.py changed, reloading.
+2023-03-28 12:54:09 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\urls.py changed, reloading.
+2023-03-28 12:58:09 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:58:09 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:58:26 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\urls.py changed, reloading.
+2023-03-28 12:58:26 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\urls.py changed, reloading.
+2023-03-28 12:59:29 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 12:59:29 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 13:03:50 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 13:03:50 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 13:08:00 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 13:08:00 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 13:08:25 ERROR-Internal Server Error: /note/notes/
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\decorators\csrf.py", line 55, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py", line 59, in wrapper
+    return function(self, request, *args, **kwargs)
+TypeError: get() missing 1 required positional argument: 'note_id'
+2023-03-28 13:10:40 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 13:10:41 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 13:18:29 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 13:18:29 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+2023-03-28 13:18:33 WARNING-Bad Request: /note/notes/70/
+2023-03-28 13:18:35 WARNING-Bad Request: /note/notes/70/
+2023-03-28 13:20:09 WARNING-Bad Request: /note/notes/71/
+2023-03-28 13:20:10 WARNING-Bad Request: /note/notes/71/
+2023-03-28 13:30:26 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 13:30:26 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 13:36:28 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 13:36:28 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 15:46:55 WARNING-Bad Request: /note/notes/
+2023-03-28 15:47:03 WARNING-Bad Request: /note/notes/
+2023-03-28 15:47:12 WARNING-Bad Request: /note/notes/
+2023-03-28 15:47:13 WARNING-Bad Request: /note/notes/
+2023-03-28 15:47:32 WARNING-Bad Request: /note/notes/
+2023-03-28 15:47:33 WARNING-Bad Request: /note/notes/
+2023-03-28 15:48:12 WARNING-Bad Request: /note/notes/
+2023-03-28 15:48:14 WARNING-Bad Request: /note/notes/
+2023-03-28 15:48:34 WARNING-Bad Request: /note/notes/
+2023-03-28 15:48:50 WARNING-Bad Request: /note/notes/
+2023-03-28 15:49:29 WARNING-Bad Request: /note/notes/
+2023-03-28 15:49:44 WARNING-Bad Request: /note/notes/
+2023-03-28 15:50:03 WARNING-Bad Request: /register
+2023-03-28 15:52:07 WARNING-Bad Request: /note/notes/
+2023-03-28 15:52:09 WARNING-Bad Request: /note/notes/
+2023-03-28 15:55:12 WARNING-Bad Request: /note/notes/
+2023-03-28 15:55:14 WARNING-Bad Request: /note/notes/
+2023-03-28 15:55:17 WARNING-Bad Request: /note/notes/
+2023-03-28 15:55:45 WARNING-Bad Request: /note/notes/
+2023-03-28 15:56:12 WARNING-Bad Request: /note/notes/
+2023-03-28 15:56:13 WARNING-Bad Request: /note/notes/
+2023-03-28 15:56:15 WARNING-Bad Request: /note/notes/
+2023-03-28 15:56:36 WARNING-Bad Request: /note/notes/
+2023-03-28 15:56:38 WARNING-Bad Request: /note/notes/
+2023-03-28 15:58:31 WARNING-Bad Request: /note/notes/
+2023-03-28 15:59:24 WARNING-Bad Request: /note/notes/
+2023-03-28 16:01:19 WARNING-Bad Request: /note/notes/
+2023-03-28 16:01:32 ERROR-Internal Server Error: /note/notes
+Traceback (most recent call last):
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\core\handlers\exception.py", line 56, in inner
+    response = get_response(request)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\newenv\lib\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/note/notes/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2023-03-28 16:01:44 WARNING-Bad Request: /note/notes/
+2023-03-28 16:03:22 WARNING-Bad Request: /note/notes/
+2023-03-28 16:03:32 WARNING-Bad Request: /note/notes/
+2023-03-28 16:03:43 WARNING-Bad Request: /note/notes/
+2023-03-28 16:04:06 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py changed, reloading.
+2023-03-28 16:04:07 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py changed, reloading.
+2023-03-28 16:04:10 WARNING-Bad Request: /note/notes/
+2023-03-28 16:04:13 WARNING-Bad Request: /note/notes/
+2023-03-28 16:05:25 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py changed, reloading.
+2023-03-28 16:05:25 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py changed, reloading.
+2023-03-28 16:06:08 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py changed, reloading.
+2023-03-28 16:06:08 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\util.py changed, reloading.
+2023-03-28 16:06:17 WARNING-Bad Request: /note/notes/
+2023-03-28 16:06:19 WARNING-Bad Request: /note/notes/
+2023-03-28 21:33:45 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.
+2023-03-28 21:33:50 WARNING-Bad Request: /note/notes/
+2023-03-28 21:33:52 WARNING-Bad Request: /note/notes/
+2023-03-28 21:35:09 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\redis_task.py changed, reloading.

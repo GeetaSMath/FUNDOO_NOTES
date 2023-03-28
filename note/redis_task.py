@@ -1,30 +1,33 @@
 import redis
 import json
 
-# redis connnection
-redis_instance = redis.Redis(host='localhost', port=6379, db=0)
+
+class RedisCrud:
+    r = redis.Redis(decode_responses=True)
+    dict_name = None
+    key_template = None
+    pk = 'id'
+
+    @classmethod
+    def save(cls, payload: dict, dict_name: str = None):
+        pk = payload.get(cls.pk)
+        if not pk:
+            raise ValueError()
+
+        if not isinstance(payload, dict):
+            raise Exception('input need to be a type of dict')
+
+        return cls.r.hset(dict_name or cls.dict_name, cls.key_template.format(pk), json.dumps(payload))
+
+    @classmethod
+    def get(cls, key, dict_name=None):
+        return cls.r.hget(dict_name or cls.dict_name, cls.key_template.format(key))
+
+    @classmethod
+    def delete(cls, key, dict_name=None):
+        return cls.r.hdel(dict_name or cls.dict_name, cls.key_template.format(key))
 
 
-class RedisNote:
-    def get_key(self, user_id):
-        return f"notes:{user_id}"
-
-    def save(self, note, user_id):
-        key = self.get_key(user_id)
-        note_id = note.get('id')
-        if note_id is None:
-            raise ValueError("Note id is required")
-        note_dict = self.get(user_id)
-        note_dict[str(note_id)] = note
-        redis_instance.hset(key, str(note_id), json.dumps(note))
-
-    def get(self, user_id):
-        key = self.get_key(user_id)
-        notes_dict = {}
-        for note_id, note_json in redis_instance.hgetall(key).items():
-            notes_dict[note_id.decode('utf-8')] = json.loads(note_json)
-        return notes_dict
-
-    def delete(self, note_id, user_id):
-        key = self.get_key(user_id)
-        redis_instance.hdel(key, str(note_id))
+class RedisNote(RedisCrud):
+    key_template = 'notes_{}'
+    dict_name = 'notes_dict'

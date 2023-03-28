@@ -6,6 +6,7 @@ from note import views
 urlpatterns= [
     # get and post urls
     path('notes/', views.NotesAPIView.as_view(), name='notes'),
+    path('notes/<int:note_id>/', views.NotesAPIView.as_view(), name='note_id'),
 
     # update url
     #path('notes/<int:note_id>/', views.NotesAPIView.as_view(), name='note_id'),
