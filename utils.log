@@ -1148,21 +1148,4 @@ TypeError: post() got an unexpected keyword argument 'pk'
 2023-03-31 23:08:39 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
 2023-03-31 23:08:50 WARNING-Bad Request: /note/collab/90
 2023-03-31 23:09:55 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
-2023-03-31 23:10:16 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
-2023-03-31 23:10:31 WARNING-Bad Request: /note/collab/90
-2023-03-31 23:11:01 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
-2023-03-31 23:11:55 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
-2023-03-31 23:12:09 WARNING-Bad Request: /note/collab/90
-2023-03-31 23:12:57 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
-2023-03-31 23:14:56 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
-2023-03-31 23:15:51 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
-2023-03-31 23:17:09 WARNING-Bad Request: /note/collab/99
-2023-03-31 23:24:48 WARNING-Bad Request: /note/collab/90
-2023-04-01 06:55:09 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
-2023-04-01 07:00:54 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
-2023-04-01 07:03:19 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
-2023-04-01 07:03:41 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
-2023-04-01 07:08:08 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
-2023-04-01 07:25:38 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
-2023-04-01 07:30:57 WARNING-Bad Request: /note/collab/91
-2023-04-01 07:57:28 INFO-C:\Users\Geetha S Matha\PycharmProjects\fundoonote\fundoonote\note\views.py changed, reloading.
+
