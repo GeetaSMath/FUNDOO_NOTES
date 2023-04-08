@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'user_fundoo',
     'note',
+    'drf_yasg',
+
 ]
 
 MIDDLEWARE = [
@@ -59,7 +61,7 @@ ROOT_URLCONF = 'fundoonote.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR,'template'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -133,8 +135,18 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.BasicAuthentication',
         "note.util.SessionAuth",
-    ]
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ],
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
 }
+# JWT_AUTH = {
+#     'JWT_SECRET_KEY': 'your_secret_key',
+#     'JWT_ALGORITHM': 'HS256',
+#     'JWT_VERIFY_EXPIRATION': True,
+#     # 'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
+# }
 
 # CELERY SETTINGS
 CELERY_BROKER_URL = 'redis://127.0.0.1:6379'
@@ -157,3 +169,17 @@ EMAIL_HOST_USER = "geetasmath121@gmail.com"
 EMAIL_HOST_PASSWORD = "mlufhujpltvgcyta"
 DEFAULT_FROM_EMAIL = 'Celery <geetasmath121@gmail.com>'
 BASE_URL = 'http://127.0.0.1:8000'
+
+# swagger setting1
+
+SWAGGER_SETTINGS = {
+    'USE_SESSION_AUTH': False,
+    'SECURITY_DEFINITIONS': {
+        'Bearer': {
+            'type': 'apiKey',
+            'name': 'Token',
+            'in': 'header'
+        },
+        'DEFAULT_INFO': 'fundoonote.urls.api_info',
+    }
+}

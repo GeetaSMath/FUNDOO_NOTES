@@ -1,55 +1,54 @@
-from django.contrib.auth import authenticate, login
-from django.http import JsonResponse
-from note.util import JWT
+from drf_yasg.utils import swagger_auto_schema
 from .models import User
-import json
+from .serializers import RegistrationSerializer, LoginSerializer
+from rest_framework.views import APIView
+from django.http import JsonResponse
+from django.contrib.auth.models import User
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import AllowAny
 from .tasks import send_mail_func
-
-def user_register(request):
-    """
-    This method register details and return response wether registation is register or not
-    :param request:
-    :return:
-    """
-    try:
-        data = json.loads(request.body)
-        if request.method == 'POST':
-            user = User.objects.create_user(first_name=data.get('first_name'), email=data.get('email'),
-                                            password=data.get('password'), mobile_number=data.get('mobile_number'))
-            print(user.first_name)
-            # send_mail_func.delay(first_name=user.first_name, recipient=user.email)
-            send_mail_func(user.first_name, user.email)
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
+import json
+from note.util import JWT
+from user_fundoo.models import User
+from rest_framework.views import Response
 
 
+class UserRegistration(APIView):
+    """Class to register the user"""
 
-            return JsonResponse(
-                {'data': {"full_name": user.first_name, "email": user.email, "mobile_number": user.mobile_number},
-                 'message': "registration successfully", "status": 201}, status=201)
-        return JsonResponse({'data': {}, 'message': "method not allowed", "status": 405}, status=405)
+    @swagger_auto_schema(request_body=RegistrationSerializer, responses={201: 'Created', 400: 'BAD REQUEST'})
+    def post(self, request):
+        """Method to register the user"""
+        try:
+            serializer = RegistrationSerializer(data=request.data)
+            serializer.is_valid(raise_exception=True)
+            serializer.save()
+            first_name = serializer.data.get("first_name")
+            email = serializer.data.get("email")
+            send_mail_func(first_name, email)
+            # return JsonResponse(message='Registration successful, check email for verification', status=201)
+            return Response({"data": serializer.data, "message": 'Registration successful', "status": 201}, status=201)
+        except Exception as e:
+            return Response({"data": {}, "message": str(e), "status": 400}, status=400)
 
-    except Exception as e:
-        return JsonResponse({"data": {}, "message": str(e), "status": 400}, status=400)
 
+class UserLogin(APIView):
+    """Class to login the user"""
 
-def user_login(request):
-    """
-        This method logins registration based on username and password.
-        Returns login success or failed...
-    """
-    try:
-        data = json.loads(request.body)
-        # data.update({"user":request.user.id})
+    @swagger_auto_schema(request_body=LoginSerializer, responses={202: 'Login Successful', 400: 'BAD REQUEST'})
+    def post(self, request):
+        """Method to login the user"""
+        try:
+            serializer = LoginSerializer(data=request.data)
+            serializer.is_valid(raise_exception=True)
+            serializer.save()
+            token = JWT().encode({"user_id": serializer.data.get("id")})
+            return Response({"data": token, "message": 'Login Successful', "status": 201}, status=201)
+        except Exception as e:
+            return Response({"data": {}, "message": str(e), "status": 400}, status=400)
 
-        if request.method == 'POST':
-            user = authenticate(email=data.get('email'), password=data.get('password'))
-            login(request,user)
-            token = JWT().encode(data={"user_id": user.id})
-            if user:
-                return JsonResponse({"message": "login succesfully", "token": token, "status": 201}, status=201)
-            return JsonResponse({"message": "invalid credentials ", "status": 406}, status=406)
-        return JsonResponse({"message": "method not allowed", "status": 405}, status=405)
-    except Exception as e:
-        return JsonResponse({"data": {}, "message": e.args[0], "status": 400}, status=400)
 
 def verify_token(request, token=None):
     try:
@@ -61,4 +60,4 @@ def verify_token(request, token=None):
         # user.save()
         return JsonResponse({"data": {}, "message": "token verified ", "status": 200}, status=200)
     except Exception as e:
-            return JsonResponse({"data": {}, "message": str(e), "status": 400}, status=400)
+        return JsonResponse({"data": {}, "message": str(e), "status": 400}, status=400)

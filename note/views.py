@@ -1,18 +1,27 @@
+import json
+from django.db.models import Q
 from rest_framework.generics import GenericAPIView
 from rest_framework.mixins import CreateModelMixin, DestroyModelMixin, ListModelMixin, UpdateModelMixin
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from django.contrib.auth import get_user_model
-
+from drf_yasg import openapi
+from drf_yasg.utils import swagger_auto_schema
+from rest_framework import viewsets
 from .redis_task import RedisNote
 from .util import verify_token
 from note.models import Note, Labels
-from note.serializers import NotesSerializer, LabelSerializer
+from user_fundoo.models import User
+from note.serializers import NotesSerializer, LabelSerializer, LabelViewSetSerializer
+from rest_framework import viewsets
+from rest_framework import status
+
 
 
 class NotesAPIView(APIView):
     serializer_class = NotesSerializer
 
+    @swagger_auto_schema(request_body=NotesSerializer, operation_summary='POST Notes')
     @verify_token
     def post(self, request):
         try:
@@ -28,30 +37,26 @@ class NotesAPIView(APIView):
         except Exception as e:
             return Response({"success": False, "message": e.args[0], "status": 400}, status=400)
 
+    @swagger_auto_schema(operation_summary='Get Notes', responses={200: 'OK', 400: 'BAD REQUEST'})
     @verify_token
-    def get(self, request, note_id: int = None):
-        print(note_id)
+    def get(self, request):
         try:
-            # notes = Note.objects.all()
-            # notes = Note.objects.get(id=note_id)
-            if note_id is not None:
-                redis_note_data = RedisNote().get(note_id, 'notes_dict')
-            else:
-                redis_note_data = RedisNote().get(request.user.id)
-            if redis_note_data is not None:
-                return Response({'message': "List of Notes", "Data": redis_note_data, "status": 200})
-            notes = Note.objects.filter(user=request.user.id)
+            notes = Note.objects.filter(
+                Q(user=request.user.id) | Q(collaborator__id=request.user.id) | Q(label__id=request.user.id),
+                isTrash=False, isArchive=False).distinct()
             serializer = NotesSerializer(notes, many=True)
             return Response(
                 {"success": True, "message": "note retrieved Successfully", "data": serializer.data, "status": 200},
                 status=200)
+
         except Exception as e:
             return Response({"success": False, "message": e.args[0], "status": 400}, status=400)
 
+    @swagger_auto_schema(request_body=NotesSerializer, responses={201: 'Created', 400: 'BAD REQUEST'})
     @verify_token
     def put(self, request):
         try:
-            notes = Note.objects.get(id=request.data.get("id"))
+            notes = Note.objects.get(id=request.data.get("note_id"))
             serializer = NotesSerializer(notes, data=request.data)
             serializer.is_valid(raise_exception=True)
             serializer.save()
@@ -62,6 +67,7 @@ class NotesAPIView(APIView):
         except Exception as e:
             return Response({"success": False, "message": e.args[0], "status": 400}, status=400)
 
+    @swagger_auto_schema(operation_summary="delete note")
     @verify_token
     def delete(self, request, note_id):
         try:
@@ -82,6 +88,7 @@ class LabelCreate(GenericAPIView, CreateModelMixin, DestroyModelMixin, ListModel
     serializer_class = LabelSerializer
 
     @verify_token
+    @swagger_auto_schema(request_body=NotesSerializer, responses={201: 'Created', 400: 'BAD REQUEST'})
     def post(self, request, *args, **kwargs):
         try:
             response = self.create(request, *args, **kwargs)
@@ -90,6 +97,7 @@ class LabelCreate(GenericAPIView, CreateModelMixin, DestroyModelMixin, ListModel
             return Response({"message": str(e)}, status=400)
 
     @verify_token
+    @swagger_auto_schema(operation_summary='Get Notes', responses={200: 'OK', 400: 'BAD REQUEST'})
     def get(self, request, *args, **kwargs):
         try:
             response = self.list(request, *args, **kwargs)
@@ -98,6 +106,7 @@ class LabelCreate(GenericAPIView, CreateModelMixin, DestroyModelMixin, ListModel
             return Response({"Message": str(e)}, status=400)
 
     @verify_token
+    @swagger_auto_schema(request_body=NotesSerializer, responses={201: 'Created', 400: 'BAD REQUEST'})
     def put(self, request, *args, **kwargs):
         try:
             response = self.update(request, *args, **kwargs)
@@ -106,6 +115,7 @@ class LabelCreate(GenericAPIView, CreateModelMixin, DestroyModelMixin, ListModel
             return Response({"Message": str(e)}, status=400)
 
     @verify_token
+    @swagger_auto_schema(operation_summary="delete note")
     def delete(self, request, *args, **kwargs):
         try:
             response = self.destroy(request, *args, **kwargs)
@@ -117,39 +127,54 @@ class LabelCreate(GenericAPIView, CreateModelMixin, DestroyModelMixin, ListModel
 # collaborator add and delete operation
 class Collaborator(APIView):
     @verify_token
+    @swagger_auto_schema(request_body=NotesSerializer, operation_summary='POST Notes')
     def post(self, request, id):
         try:
-            User = get_user_model()
-            print(request.user.id, 1213334)
-            print(id)
             note = Note.objects.get(id=id, user=request.user.id)
             user_id = request.data.get('collaborator')
-            user_name = request.user.email
-            print(user_name)
-            print(note)
-            print(user_id)
             c_user = User.objects.get(id=user_id)
-            # c_user = User.objects.get(email=user_name)
-            print(c_user)
-            if request.user.email != c_user:
+            if request.user.email != c_user.email:
                 note.collaborator.add(c_user)
             return Response({"message": "Collaborator Added Successfully", 'status': 201})
         except Exception as e:
             return Response({"message": str(e)}, status=400)
 
-
-
-
     @verify_token
+    @swagger_auto_schema(operation_summary="delete note")
     def delete(self, request, id):
         try:
             note = Note.objects.get(id=id, user=request.user.id)
-            user_name = request.data.get('collaborator')
-            user = User.objects.get(username=user_name)
-            if request.user.id != user:
-                note.collaborator.remove(user)
-            return Response({"message": "Collaborator Deleted Successfully", 'status': 200})
+            user_id = request.data.get('collaborator')
+            c_user = User.objects.get(id=user_id)
+            if note.collaborator.filter(id=c_user.id).exists():
+                note.collaborator.remove(c_user)
+                return Response({"message": "Collaborator Deleted Successfully", 'status': 200})
+            else:
+                return Response({"message": "Collaborator not found", 'status': 404})
         except Exception as e:
             return Response({"message": str(e)}, status=400)
 
 
+class LabelNote(viewsets.ModelViewSet):
+    serializer_class = LabelViewSetSerializer
+
+    @verify_token
+    def create(self, request):
+        try:
+            serializer = LabelViewSetSerializer(data=request.data)
+            serializer.is_valid(raise_exception=True)
+            serializer.save()
+            return Response(
+                {"success": True, "message": "Note label Created Successfully", "data": serializer.data, "status": 201},
+                status=201)
+        except Exception as e:
+            return Response({"success": False, "message": e.args[0], "status": 400}, status=400)
+
+    @verify_token
+    def destroy(self, request, pk):
+        try:
+            label_rm = Note.objects.get(id=pk)
+            label_rm.delete()
+            return Response({"message": "label note Deleted Successfully", 'status': 200})
+        except Exception as e:
+            return Response({"message": str(e)}, status=400)

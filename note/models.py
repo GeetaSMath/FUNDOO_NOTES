@@ -15,6 +15,10 @@ from django.dispatch import receiver
 from user_fundoo.models import User
 from django_celery_beat.models import CrontabSchedule, PeriodicTask
 
+
+
+
+
 class Labels(models.Model):
     """
      Labels Model : name, user_id, created_at, modified_at
@@ -28,7 +32,6 @@ class Note(models.Model):
     """
             Notes Model : title, description, user_id, created_at, modified_at, collaborator, label...
     """
-    objects = None
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=255)
     description = models.TextField(max_length=1500)
@@ -42,5 +45,9 @@ class Note(models.Model):
     color = models.CharField(max_length=10, null=True, blank=True)
     reminder = models.DateTimeField(null=True, blank=True)
     image = models.ImageField(upload_to='notes_images/', null=True, blank=True)
+
+
+
+
 
 
