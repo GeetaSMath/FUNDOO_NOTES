@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+
+<body>
+<h2 class="text-center alert alert-info">Home Page</h2>
+
+
+    <h2 >User Information</h2>
+    <label>User Id - </label >{{user.id}}<br>
+    <label>First Name - </label >{{user.first_name}}<br>
+    <label>Mobile Number - </label >{{user.mobile_number}}<br>
+    <label>email - </label >{{user.email}}<br>
+
+
+
+
+    <br><br>
+    <a href="{% url 'user_logout' %}">Logout</a> <br><br>
+</body>
+
+</html>

@@ -17,8 +17,6 @@ from django_celery_beat.models import CrontabSchedule, PeriodicTask
 
 
 
-
-
 class Labels(models.Model):
     """
      Labels Model : name, user_id, created_at, modified_at

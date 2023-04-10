@@ -11,7 +11,7 @@ class RegistrationSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ['id', 'email', 'password', 'first_name', 'mobile_number']
+        fields = ['id', 'email', 'password', 'first_name', 'last_name', 'mobile_number']
         extra_kwargs = {'password': {'write_only': True}}
         read_only_fields = ['id']
         swagger_schema_fields = {"required": ['email', 'password'], "type": openapi.TYPE_OBJECT,

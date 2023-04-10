@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Login</title>
+</head>
+
+<body>
+ <h2 class="text-center alert alert-info">Login To Create Notes</h2>
+<form action="" method="post">
+    {% csrf_token %}
+    <label for="email">Email</label><br>
+    <input type="text" id="email" name="email"><br><br>
+
+     <label for="password">Password</label><br>
+    <input type="password" id="password" name="password"><br><br>
+
+    <input type="submit" value="Login">
+</form>
+    <br>
+    <a href="{% url 'user_registration' %}">Register</a>
+</body>
+
+</html>
